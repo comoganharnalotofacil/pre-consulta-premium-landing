@@ -13,6 +13,7 @@ import Faq from '@/components/Faq';
 import Cta from '@/components/Cta';
 import Footer from '@/components/Footer';
 import FloatingButton from '@/components/FloatingButton';
+import ValueSimulator from '@/components/ValueSimulator';
 
 const Index = () => {
   // Update page title and meta description
@@ -32,6 +33,7 @@ const Index = () => {
       <HowItWorks />
       <Impact />
       <Results />
+      <ValueSimulator />
       <Numbers />
       <Testimonials />
       <Plans />
