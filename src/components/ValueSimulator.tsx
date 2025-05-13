@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Slider } from "@/components/ui/slider";
 import { Input } from "@/components/ui/input";
-import { Clock, Calculator, DollarSign, CalendarDays } from "lucide-react";
+import { Clock, Calculator, DollarSign, CalendarDays, TrendingUp, Users } from "lucide-react";
 
 const ValueSimulator: React.FC = () => {
   const [patients, setPatients] = useState<number>(20);
@@ -55,12 +55,18 @@ const ValueSimulator: React.FC = () => {
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-12 reveal-from-bottom">
+        <div className="text-center mb-16 reveal-from-bottom">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-verde-escuro">
-            Calcule seu <span className="text-gradient">Retorno sobre Investimento</span>
+            <span className="relative inline-block">
+              <span className="absolute -top-8 -left-8 w-16 h-16 bg-verde-neon/10 rounded-full animate-pulse-slow"></span>
+              <TrendingUp className="inline-block w-10 h-10 mr-3 text-verde-neon animate-bounce-subtle" />
+              <span className="text-gradient font-extrabold tracking-tight">Transforme Tempo em Lucro</span>
+            </span>
           </h2>
+          <div className="h-1 w-24 bg-gradient-to-r from-verde-neon to-verde-claro mx-auto my-6 rounded-full"></div>
           <p className="text-lg md:text-xl text-cinza-escuro/80 max-w-3xl mx-auto">
-            Ajuste os parâmetros abaixo e veja o impacto direto que a Pre-Consulta pode ter na sua rotina clínica e faturamento
+            Descubra o <span className="font-bold text-verde-escuro">impacto financeiro real</span> que a Pre-Consulta pode gerar para sua clínica.
+            Simule agora e veja quanto sua prática pode crescer!
           </p>
         </div>
 
@@ -76,7 +82,7 @@ const ValueSimulator: React.FC = () => {
               <div className="space-y-3">
                 <div className="flex justify-between items-center">
                   <label className="text-sm font-medium flex items-center gap-2">
-                    <Clock className="h-4 w-4 text-verde-escuro" /> 
+                    <Users className="h-4 w-4 text-verde-escuro" /> 
                     Pacientes atendidos por dia
                   </label>
                   <span className="bg-verde-escuro/10 px-3 py-1 rounded-full text-verde-escuro font-semibold">
