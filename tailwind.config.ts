@@ -120,6 +120,28 @@ export default {
           '50%': { transform: 'translate(0, 10px)' },
           '75%': { transform: 'translate(-5px, 5px)' },
         },
+        'shine': {
+          '0%': { left: '-100%' },
+          '100%': { left: '200%' },
+        },
+        'float-slow': {
+          '0%, 100%': { transform: 'translateY(0) rotate(0)' },
+          '25%': { transform: 'translateY(-10px) rotate(1deg)' },
+          '50%': { transform: 'translateY(0) rotate(0)' },
+          '75%': { transform: 'translateY(10px) rotate(-1deg)' },
+        },
+        'scale-up': {
+          '0%': { transform: 'scale(0.95)' },
+          '100%': { transform: 'scale(1)' },
+        },
+        'bounce-subtle': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-5px)' },
+        },
+        'glow': {
+          '0%, 100%': { filter: 'drop-shadow(0 0 2px rgba(78, 250, 156, 0.5))' },
+          '50%': { filter: 'drop-shadow(0 0 10px rgba(78, 250, 156, 0.8))' },
+        }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
@@ -131,11 +153,17 @@ export default {
         'float': 'float 5s ease-in-out infinite',
         'rotate-slow': 'rotate-slow 8s linear infinite',
         'particle-float': 'particle-float 8s ease-in-out infinite',
+        'shine': 'shine 8s ease-in-out infinite',
+        'float-slow': 'float-slow 15s ease-in-out infinite',
+        'scale-up': 'scale-up 0.5s ease-out forwards',
+        'bounce-subtle': 'bounce-subtle 3s ease-in-out infinite',
+        'glow': 'glow 3s ease-in-out infinite',
       },
       backgroundImage: {
         'gradient-primary': 'linear-gradient(135deg, #1A3C34, #A3C9A8)',
         'gradient-secondary': 'linear-gradient(90deg, #A3C9A8, #F5F6F5)',
         'texture-lines': "url('/texture-lines.svg')",
+        'gradient-highlight': 'linear-gradient(135deg, #4EFA9C10, #A3C9A820)',
       },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],
@@ -146,6 +174,8 @@ export default {
         'elevated': '0 10px 30px -5px rgba(26, 60, 52, 0.25)',
         'neon': '0 0 10px rgba(78, 250, 156, 0.5), 0 0 20px rgba(78, 250, 156, 0.3)',
         'card-hover': '0 12px 40px -8px rgba(26, 60, 52, 0.3)',
+        'premium': '0 15px 35px -5px rgba(26, 60, 52, 0.3), 0 0 5px rgba(163, 201, 168, 0.2)',
+        '2xl': '0 25px 50px -12px rgba(26, 60, 52, 0.4)',
       },
     }
   },
