@@ -33,7 +33,7 @@ const Impact: React.FC = () => {
     <section id="impacto" className="py-24 bg-gradient-to-b from-branco to-verde-claro/20" ref={impactRef}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="section-title mx-auto">
+          <h2 className="headline-gradient-underline text-4xl md:text-5xl font-bold mb-4 text-verde-escuro mx-auto">
             A Ponte Digital
           </h2>
           <p className="text-xl max-w-3xl mx-auto text-cinza-escuro/80">
@@ -84,7 +84,7 @@ const Impact: React.FC = () => {
           
           <div className="order-1 lg:order-2 fadeIn">
             <div className="relative">
-              <div className="absolute -top-10 -right-10 w-32 h-32 bg-verde-claro/30 rounded-full filter blur-xl"></div>
+              <div className="absolute -top-10 -right-10 w-32 h-32 bg-verde-neon/30 rounded-full filter blur-xl"></div>
               <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-verde-escuro/30 rounded-full filter blur-xl"></div>
               
               <div className="glass-card p-1 relative z-10 transform hover:scale-[1.02] transition-all duration-500">

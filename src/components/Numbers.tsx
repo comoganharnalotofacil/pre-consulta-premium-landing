@@ -33,7 +33,7 @@ const Numbers: React.FC = () => {
     <section className="py-20 bg-branco" ref={numbersRef}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 fadeIn">
-          <h2 className="section-title mx-auto">
+          <h2 className="headline-gradient-underline text-4xl md:text-5xl font-bold mb-4 text-verde-escuro">
             Números que Impressionam
           </h2>
           <p className="text-xl max-w-2xl mx-auto text-cinza-escuro/80">
@@ -64,7 +64,7 @@ const Numbers: React.FC = () => {
         
         <div className="text-center mb-12 fadeIn">
           <h3 className="text-2xl font-bold text-verde-escuro mb-4">Clínicas Parceiras</h3>
-          <div className="w-16 h-1 bg-verde-claro mx-auto mb-8"></div>
+          <div className="w-16 h-1 bg-gradient-to-r from-verde-neon to-verde-claro mx-auto mb-8"></div>
         </div>
         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-12">

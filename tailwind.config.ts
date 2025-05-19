@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -66,10 +67,10 @@ export default {
           border: 'hsl(var(--sidebar-border))',
           ring: 'hsl(var(--sidebar-ring))'
         },
-        // Custom colors for Pre-Consulta
-        'verde-escuro': '#1A3C34',
-        'verde-claro': '#A3C9A8',
-        'verde-neon': '#4EFA9C',
+        // Updated colors for Pre-Consulta with new teal
+        'verde-escuro': '#00897B', // New teal dark
+        'verde-claro': '#4DB6AC', // New teal light
+        'verde-neon': '#1DE9B6', // New teal neon accent
         'branco': '#F5F6F5',
         'cinza-escuro': '#2E2E2E',
         'dourado': '#D4AF37',

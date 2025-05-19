@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
@@ -16,16 +15,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 155 37% 17%; /* verde-escuro */
+    --primary: 174 87% 27%; /* Updated to teal */
     --primary-foreground: 88 5% 96%; /* branco */
 
-    --secondary: 120 28% 71%; /* verde-claro */
-    --secondary-foreground: 155 37% 17%; /* verde-escuro */
+    --secondary: 174 32% 51%; /* Updated to teal light */
+    --secondary-foreground: 174 87% 27%; /* teal-escuro */
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 120 28% 71%; /* verde-claro */
+    --accent: 174 32% 51%; /* Updated to teal light */
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -70,14 +69,33 @@
     @apply transition-all duration-300 bg-gradient-to-r from-verde-escuro to-verde-claro text-branco py-3 px-6 rounded-lg hover:shadow-lg hover:scale-105 font-semibold;
   }
   
-  /* Enhanced section title */
+  /* Enhanced section title with gradient underline */
   .section-title {
     @apply text-4xl md:text-5xl font-bold mb-8 text-verde-escuro relative inline-block;
   }
   
   .section-title::after {
     content: '';
-    @apply absolute left-0 bottom-0 h-1 w-1/3 bg-gradient-to-r from-verde-claro to-transparent rounded-full;
+    @apply absolute left-0 bottom-0 h-1 w-1/3 bg-gradient-to-r from-verde-claro to-verde-neon rounded-full;
+  }
+  
+  /* New gradient headline underline style */
+  .headline-gradient-underline {
+    @apply relative inline-block;
+  }
+  
+  .headline-gradient-underline::after {
+    content: '';
+    @apply absolute left-0 bottom-0 h-1 w-full bg-gradient-to-r from-verde-neon via-verde-claro to-verde-escuro/30 rounded-full transform origin-left transition-all duration-300;
+  }
+  
+  .headline-gradient-underline:hover::after {
+    @apply scale-x-110;
+  }
+
+  /* Updated text gradient for headlines */
+  .text-gradient {
+    @apply bg-gradient-to-r from-verde-escuro via-verde-claro to-verde-neon bg-clip-text text-transparent;
   }
 
   .fadeIn {
